@@ -1,0 +1,9 @@
+@namespace("com.nutmeg.user.service")
+protocol UserOrganisationProtocol {
+
+  record UserOrganisationEvent {
+    string userId;
+    string organisation;
+    timestamp_ms createdAt;
+  }
+}

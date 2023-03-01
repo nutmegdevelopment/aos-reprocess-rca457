@@ -1,0 +1,17 @@
+@namespace("com.nutmeg.user.service")
+protocol CustomerEmailProtocol {
+
+  record CustomerEmailEventKey {
+    @logicalType("uuid") string userId;
+  }
+
+  record CustomerEmailEventValue {
+    Metadata metadata;
+    string emailAddress;
+  }
+
+  record Metadata {
+      string correlationId;
+      timestamp_ms createdAt;
+  }
+}

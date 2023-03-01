@@ -1,0 +1,10 @@
+kafka:
+  bootstrap:
+    servers: "127.0.0.1:32400,127.0.0.1:32401,127.0.0.1:32402,127.0.0.1:32403,127.0.0.1:32404,127.0.0.1:32405"
+
+schema:
+  registry:
+    url: https://sr.dev.nutmeg.co.uk #this will be necessary to be changed to https://sr.prod.nutmeg.co.uk
+
+server:
+  port: 8282
